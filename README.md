@@ -3,7 +3,7 @@
 
 Um codificador/decodificador de texto feito com base no desafio da formação One - Oracle Next Education. 
 
- [Acesse o aplicativo aqui](https://lucas-belmiro.github.io/decodificador-desafio/pp/)
+ [Acesse o aplicativo aqui](https://lucas-belmiro.github.io/decodificador-desafio/)
 
 
 ## Stack utilizada
