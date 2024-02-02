@@ -17,7 +17,7 @@ Um codificador/decodificador de texto feito com base no desafio da formação On
 - Metodologia SCRUM para gerenciamento do projeto
 - Estudo do protótipo do Figma
 - Desenvolvimento da página estática
-- Desenvolvimento das funcionalidade
+- Desenvolvimento das funcionalidades
 - Deploy
 - Compartilhamento
 
