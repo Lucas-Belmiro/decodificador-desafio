@@ -52,3 +52,6 @@ Se você tiver algum feedback, por favor envie por meio de lucasrbelmiro@gmail.c
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucasbelmiro/)
 
+## Badge
+
+![cms_files_10224_1671211139Prancheta_3](https://github.com/Lucas-Belmiro/decodificador-desafio/assets/103300371/980ca0df-eb52-4d86-88ce-4b442cf5f9f3)
