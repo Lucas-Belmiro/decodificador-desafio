@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: aintialiased;
+  -moz-osx-font-smoothing: graysacale;
+}
+
+:root {
+  font-size: 62.5%; /*equivale a dividir por 10*/
+  --font-family: "Inter", sans-serif;
+  --color-background: #f3f5fc;
+  --color-primary: #0a3871;
+  --color-secundary: #495057;
+  --color-tertiary: #d8dfe8;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 136rem;
+  padding: 5rem;
+  display: flex;
+  gap: 8rem;
+}
+
+.lateral-menu {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.lateral-menu img {
+  width: 3.2rem;
+  padding-top: 4rem;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+}
+
+.input-field label {
+  display: none;
+}
+
+.input-field textarea {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 3.2rem;
+  font-family: var(--font-family);
+  color: var(--color-primary);
+  height: 60vh;
+}
+
+textarea::placeholder {
+  color: var(--color-primary);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+  border-radius: 3.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.show-info2 {
+  display: none;
+  padding: 4rem;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+  border-radius: 3.2rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  position: relative;
+}
+
+.show-info2 p {
+  font-size: 2.4rem;
+  height: 100%;
+  overflow: auto;
+  color: var(--color-secundary);
+  position: relative;
+  top: 0;
+}
+
+.show-info2 button {
+  width: 80%;
+  height: 8%;
+  align-self: center;
+  position: absolute;
+  margin-bottom: 4rem;
+  bottom: 0;
+  transition: transform 0.3s ease;
+}
+
+.alert-message {
+  display: flex;
+  color: var(--color-secundary);
+}
+
+.alert-message img {
+  width: 1.6rem;
+  margin-right: 0.8rem;
+}
+
+.button-area {
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 2rem;
+}
+
+.button-area .button1 {
+  width: 32.8rem;
+  height: 6.7rem;
+  border-radius: 2.4rem;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: none;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button1:hover {
+  transform: scale(1.03);
+}
+
+.button2 {
+  width: 32.8rem;
+  height: 6.7rem;
+  border-radius: 2.4rem;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: none;
+  font-family: var(--font-family);
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button2:hover {
+  transform: scale(1.03);
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 32rem;
+  text-align: center;
+  gap: 2.4rem;
+}
+
+.container-text2 {
+  display: flex;
+  height: 85%;
+  flex-direction: column;
+  max-width: 32rem;
+  text-align: center;
+  gap: 2.4rem;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .button-area {
+    width: 100%;
+    text-align: center;
+  }
+  .input-field {
+    width: 100%;
+  }
+  .show-info {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .show-info2 {
+    width: 100%;
+    height: 100rem;
+  }
+  .show-info img {
+    display: none;
+  }
+  .container-text {
+    max-width: 132rem;
+    padding: 2rem;
+    height: 90%;
+  }
+  .input-field textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem;
+    gap: 5rem;
+  }
+  .button-area {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-area .button1 {
+    width: 100%;
+  }
+  .button2 {
+    width: 100%;
+  }
+}

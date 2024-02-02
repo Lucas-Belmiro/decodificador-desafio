@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <section class="lateral-menu">
+        <img src="./assets/images/Logo.svg" alt="Logo alura" />
+      </section>
+
+      <section class="input-field">
+        <div>
+          <label for="text">Digite seu texto:</label>
+          <textarea
+            id="text"
+            name="text"
+            placeholder="Digite seu texto"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="alert-message">
+          <img src="./assets/images/alert-icon.svg" alt="ícone de alerta" />
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+
+        <div class="button-area">
+          <button onclick="encryptOn()" class="button1">Criptografar</button>
+          <button onclick="decryptOn()" class="button2">Descriptografar</button>
+        </div>
+      </section>
+
+      <section id="text-space" class="show-info">
+        <img
+          src="./assets/images/figure1.png"
+          alt="Ilutração de pessoa com uma lupa olhando para um diamante"
+        />
+        <div class="container-text">
+          <h2>Nenhuma mensagem encontrada</h2>
+          <p>
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+      </section>
+
+      <section id="text-insert" class="show-info2">
+        <div class="container-text2">
+          <p id="text-content"></p>
+          <button onclick="copyText()" class="button2">Copiar</button>
+        </div>
+      </section>
+    </section>
+
+    <script src="./assets/scripts/app.js"></script>
+  </body>
+</html>
